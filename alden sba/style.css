@@ -1,0 +1,508 @@
+html{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+/* header */
+.header {
+    height: 49.7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(58, 56, 56);
+    padding: 0 0.6%;
+    font-family: 'Bruno Ace SC', cursive;
+    
+}
+.logo-container {
+     padding-right: 24rem; 
+}
+
+ .logo{
+    font-size: 1.6rem;
+    flex-grow: 1;
+    color:rgb(255, 0, 0);
+    
+}
+
+
+
+/*3 line*/
+.container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 42px;
+    height: 3.67px;
+    background-color: rgb(158, 158, 158);
+    margin: 10px 0;
+    
+  }
+  
+/*3 line till here*/
+
+/*searchbar*/
+.searchbar {
+    margin-top: 25px;
+    padding: 10px 15px;
+}
+.search {
+    margin-top: -3px;
+    background-color: rgba(191, 221, 255, 0.705);
+}
+
+
+/* The side nav menu(the 3 line) */
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: rgb(0, 0, 0); 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+
+  .sidenav a:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+ 
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+ 
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Page content */
+  .main {
+    margin-left: 200px;
+  }
+
+  /*nav menu stop here*/
+
+/*dropdown all*/
+.header .dropdown {
+    display: inline-block;
+    font-family: 'Bruno Ace SC', cursive;
+    text-decoration: none;
+    padding-right: 2rem;
+    font-size: 15px;
+    
+}
+
+    /*dropdown */
+/*dropdown button*/
+.dropbtn {
+    background-color: rgb(58,56,56);
+    color: rgb(0, 0, 0);
+    padding: 14px;
+    border: none;
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 18px;
+}
+
+/* dropdown content*/
+.dropdown-content {
+    display: none;
+    position:absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 16px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: -8px;
+    
+}
+
+/* links inside the dropdown */
+.dropdown-content a{
+    color: rgb(0, 0, 0);
+    padding: 13px 25px;
+    text-decoration: none;
+    display: block;
+}
+
+/*color of dropdown links */
+.dropdown-content a:hover {
+    background-color: rgba(58, 56, 56, 0.191);
+}
+
+/* the dropdown menu */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* background color-dropdown button */
+.dropdown:hover .dropbtn {
+    background-color: rgb(0, 119, 255);
+    
+}
+
+    
+
+
+/*login button*/
+/* dropdown-on-click*/
+.dropclk{
+    background-color: rgb(58, 74, 54);
+    color: rgb(255, 255, 255);
+    padding: 16px 27px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown-on-click hover & focus */
+.dropclk:hover, .dropclk:focus {
+  background-color: rgb(52, 88, 60);
+}
+
+/* position of the up side*/
+.dropdown-click {
+    position: relative;
+    display: inline-block;
+}
+
+/* dropdown-click content*/
+.dropclk-con {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 16px;
+    box-shadow: 0px 8px 16px 0px rgba(58, 56, 56, 0.191);
+    z-index: 1;
+    right: 0px;
+    
+}
+
+/* Links inside the dropdown */
+.dropclk-con a {
+    color: rgb(0, 0, 0);
+    padding: 30px 50px;
+    text-decoration: none;
+    display: block;
+  }
+  
+ 
+  
+  /* Show the dropdown menu :) */
+  .show {display:block;}
+
+/*login from!!*/
+/*from*/
+.from {
+    border: 3px solid rgb(255, 255, 255);
+}
+
+/* full-width inputs */
+input[type=text], input[type=password]{
+    width:100%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* style for all buttons */
+button {
+    background-color: rgb(11, 169, 0);
+    color: rgb(255, 255, 255);
+}
+
+/*effect for btn*/
+button:hover {
+    opacity: 0.8;
+}
+
+/*cancel btn*/
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: rgb(255, 0, 0);
+}
+
+.container{
+    padding: 16px;
+}
+
+/* forgot password*/
+span.psw {
+    float: right;
+    padding-top: 6px;
+}
+
+/* styles for span and cancel button*/
+@media screen and (max-width:300px) {
+    span.psw {
+         display: block;
+         float:none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+/* signinbtn */
+.signinbtn {
+    display: inline-block;
+    
+}
+
+*{box-sizing: border-box;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: rgb(255, 255, 255);
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+button {
+  background-color: rgb(11, 169, 0);
+  color:rgb(255, 255, 255);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.cancelbtn2 {
+  padding: 14px 20px;
+  background-color: rgb(255, 0, 0);
+}
+
+.cancelbtn2, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top:0;
+  width:50%;
+  height: 50%;
+  overflow: auto;
+  background-color: rgb(135, 135, 135);
+  padding-top: 50px;
+}
+
+
+
+hr{
+  border: 1px rgb(0, 119, 255);
+  margin-bottom: 25px;
+}
+
+.close{
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.close:hover,
+.close:focus {
+  color:rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+/* img-slide */
+.slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.clearfix::after{
+  content: "";
+  clear:both;
+  display:table;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+
+
+.mySlide {
+    display: none;
+}
+
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .wns{
+    padding: 30px ;
+    display: flex;
+  }
+
+  .wns img {
+    height: 531px;
+  }
+
+    .wnstext{
+      flex-grow: 1;
+      font-size: 1.2rem;
+    }
+
+  .h1{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    
+  }
+
+  .wnstext .h2{
+    color:rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .wnstext .h4{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .wnstext .h6 {
+    padding-top: -130px;
+    color: rgb(255, 255, 255);
+    padding: 30px 80px;
+    
+  }
+
+  .cmb {
+    display: flex;
+  }
+  
+  .blank{
+    width: 110%;
+  }
+
+  .commentbtn {
+    border-radius: 17px;
+  }
+
+  /* ifream */
+  .video{
+    width: auto;
+    height: auto;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+  }
+
+ 
+
+/* video slide */
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+ }
+ 
+.footer-left {
+  color: rgb(148, 147, 147);
+  font-size: 14px;
+  flex-grow: 1;
+  padding-left: 30px;
+ }
+ 
+ .social-icons {
+  padding-right: 30px;
+
+ }
+ 
+ .social-icons li {
+  display: inline;
+  padding-left: 5px;
+ }
+ 
+ 
+ .social-icons svg {
+  fill: rgb(255, 255, 255);
+ }
+ 
