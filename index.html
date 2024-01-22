@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<html>
+    <head>
+        <title>alden sba</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+        <link rel="icon" type="image" href="img/SHILED-logo.png">
+    </head>
+   
+    <body>
+        <!--header-->
+        <nav class="header">
+            <div class="container" onclick="openNav()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                
+                <form class="searchbar">
+                
+                    <input type="text" placeholder="search...">
+                    <button class="search" onclick="closeNav()"><i class="fa fa-search"></i></button>
+                </form>
+                
+                <a href="#">About</a>
+                <a href="#">All Spell</a>
+                <a href="#">all</a>
+                <a href="#">Contact</a>
+            </div>
+               <Script>
+                    function openNav() {
+                        document.getElementById("mySidenav").style.width = "250px";
+                        document.getElementById("main").style.marginLeft = "250px";
+                        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+                    }   
+                    function closeNav() {
+                        document.getElementById("mySidenav").style.width = "0";
+                        document.getElementById("main").style.marginLeft = "0";
+                        document.body.style.backgroundColor = "white";
+                    }
+                </Script>
+              
+              
+              <!-- buttons-->
+            
+            <div class="logo-container">
+                <span class="logo" onclick="location.reload()">marvel multiverses</span>
+            </div>
+
+            <ul>
+                <div class="dropdown">
+                    <button class="dropbtn">Moive unvirse</button>
+                        <div class="dropdown-content">
+                            <a href="#1">Marvel Studio</a>
+                            <a href="#1 ">Sony</a>
+                            <a href="x-man.html">20th Century Fox</a>
+                        </div>
+                </div>
+
+                
+
+                <div class="dropdown">
+                    <button class="dropbtn">map</button>
+                        <div class="dropdown-content">
+                            <a href="#2">link1</a>
+                            <a href="#2">2</a>
+                            <a href="#2">link3</a>
+                        </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">story</button>
+                        <div class="dropdown-content">
+                            <a href="#3">link1</a>
+                            <a href="#3">3</a>
+                            <a href="#3">link3</a>
+                        </div>
+                </div>
+                <div class="dropdown-click">
+                    <button onclick="closebtn()" class="dropclk">Login</button>
+                        <div id="myDropdown-clk" class="dropclk-con">
+                           <div class="container">
+                                <form action="action_page.php" method="post">  
+                                    <label for="uname"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required minlength="2" maxlength="12" pattern="[A-Za-z/s]+">
+
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                                
+                                    <button type="submit">Login</button>
+                                    <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                    </div>
+                                
+                                    <div class="container">
+                                        <button type="button" id="canclebtn" class="cancelbtn" onclick="closebtn()">Cancel</button>
+                                        <span class="psw"><a href="#5">Forget password?</a></span>
+                                    </div>
+
+                                    <div class="signin">
+                                        <span class="singinbtn" onclick="document.getElementById('id02').style.display='block'">Sign up</span>
+                                        <div id="id02" class="modal">
+                                            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close modal"><i class="fa fa-close"></i></span>
+                                            <from class="modal-content" action="/action_page.php">
+                                                <div class="container">
+                                                    <h1>sing up</h1>
+                                                    <p>create an account</p>
+                                                    <hr>
+                                                    <lable for="Username"><b>Username</b></lable>
+                                                    <input type="text" placeholder="create username..." name="username" required minlength="2" maxlength="12" pattern="[A-Za-z/s]+">
+
+                                                    <lable for="snpsw"><b>Password</b></lable>
+                                                    <input type="password" placeholder="create password..." name="snpsw" required>
+
+                                                    <label for="anpsw-repeat"><b>Repeat password</b></label>
+                                                    <input type="password" placeholder="repeat password" name="snpsw-repeat" required>
+
+                                                    <label>
+                                                        <input type="checkbox" checked="checked" name="Remember"> Remember me
+                                                    </label>
+                                                    <div class="clearfix">
+                                                        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
+                                                        <button type="submit" class="singup">Sing Up</button>
+                                                    </div>
+                                                </div>
+                                            </from>
+
+                                        </div>
+                                        <script>
+                                            // Get the modal
+                                            var modal = document.getElementById('id02');
+                                            
+                                            // When the user clicks anywhere outside of the modal, close it
+                                            window.onclick = function(event) {
+                                                if (event.target == modal) {
+                                                    modal.style.display = "none";
+                                                }
+                                            }
+                                        </script>
+
+                                    </div>
+                                </form>
+                            </div>
+                             <script>
+                                function closebtn() {
+                                    document.getElementById("myDropdown-clk").classList.toggle("show");
+                                }
+                                window.onclick=function(event) {
+                                    if (!event.target.matches('.dropclk')){
+                                        var dropdown= document.getElementsByClassName("dropclk-con");
+                                        var i;
+                                        for(i = 0; i<dropdown.length; i++){
+                                            var openDropdown=dropdown[i];
+                                            if (openDropdown.classList.contains('show')){
+                                                openDropdown.classList.remove('show');
+                                            }
+                                        }
+                                    }
+                                }
+
+                                var modal= document.getElementById('id01');
+
+                                window.onclick=function(event){
+                                    if(event.target==modal){
+                                        modal.style.display="none";
+                                    }
+                                }
+                            </script>
+                        </div>
+                </div>
+            </ul>
+        </nav>
+
+        <!--banner-->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="no.text">1/5</div>
+                <img src="img/marvel 1.jpeg" style="width: 100%;" alt="Bounch of marvel heros">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="no.text">2/5</div>
+                <img src="img/marvel 2.webp" style="width: 100%;" alt="miles morales swinging">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="no.text">3/5</div>
+                <img src="img/marvel3.jpeg" style="width: 100%;" alt="og6">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="no.text">4/5</div>
+                <img src="img/marvel 4.jpeg" style="width: 100%;" alt="gwen from the spiderverse moive">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="no.text">5/5</div>
+                <img src="img/marvel 5.jpeg" style="width: 100%;" alt="the Secret timeline">
+            </div>
+
+           
+
+        </div>
+        <br>
+      
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+        
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 5000); 
+            }
+        </script>
+        
+        <div>
+        <h1 class="h1">!!UPDATE NEWS!!</h1>
+        </div>
+
+        <div class="wns">
+            <div class="wnsimg">
+                <img src="img/miles 1.webp" alt="the spider verse poster" >
+            </div>
+            <div class="wnstext">
+                
+                <h2 class="h2">Spider-man : Across the spiderverse</h2>
+                <h4 class="h4"><small>2h20min  PG</small></h4>
+                <div class="h6">Miles Morales returns for the next chapter of the Oscar®-winning Spider-Verse saga, an epic adventure that will transport Brooklyn's full-time, friendly neighborhood Spider-Man across the Multiverse to join forces with Gwen Stacy and a new team of Spider-People to face off with a villain more powerful than anything they have ever encountered.</div>
+                <from class="comment">
+                    <input type="text" placeholder="comment...">
+                    <div class="cmb">
+                        <button class="commentbtn">summit</button>
+                        <div class="blank"></div>
+                    </div>
+                </from>
+            </div>
+            
+        </div>
+        
+        <div class="wns">
+            <div class="wnsimg">
+                <img src="img/loki s2.jpeg" alt="Loki S2 poster" >
+            </div>
+            <div class="wnstext">
+                <h2 class="h2">Loki season2</h2>
+                <h4 class="h4"><small>  PG on Disney+</small></h4>
+                <div class="h6"></div>
+                <from class="comment">
+                    <input type="text" placeholder="comment...">
+                    <div class="cmb">
+                        <button class="commentbtn">summit</button>
+                        <div class="blank"></div>
+                    </div>
+                </from>
+            </div>
+        </div>
+
+        <div class="wns">
+            <div class="wnsimg">
+                <img src="img/the marvels .jpeg" alt="the marvel poster">
+            </div>
+            <div class="wnstext">
+                <h2 class="h2">The Marvels</h2>
+                <h4 class="h4"><small>1h 45m PG</small></h4>
+                <div class="h6">Carol Danvers aka Captain Marvel has reclaimed her identity from the tyrannical Kree and taken revenge on the Supreme Intelligence. But unintended consequences see Carol shouldering the burden of a destabilized universe. When her duties send her to an anomalous wormhole linked to a Kree revolutionary, her powers become entangled with that of Jersey City super-fan, Kamala Khan aka Ms. Marvel, and Carol's estranged niece, now S.A.B.E.R. astronaut Captain Monica Rambeau. Together, this unlikely trio must team-up and learn to work in concert to save the universe as "The Marvels."</div>
+                <from class="comment">
+                    <input type="text" placeholder="comment...">
+                    <div class="cmb">
+                        <button class="commentbtn">summit</button>
+                        <div class="blank"></div>
+                    </div>
+                </from>
+            </div>
+        </div>
+
+        <div class="video">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-active">
+                        <iframe width="500px" height="300px"  src="https://www.youtube.com/embed/ZB8DUER4fmQ?si=MnGKor1ugxDOsKYG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="swiper-slide swiper-slide-active">
+                        <iframe width="500px" height="300px" src="https://www.youtube.com/embed/j-0Li8Q14g8?si=pwcXCaMZt3l8NnJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide-active">
+                        <iframe  width="500px" height="300px"src="https://www.youtube.com/embed/rg8pCyrZYaA?si=Tqc6JZZ_twI17Ok5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+            </div>
+        
+        </div>
+
+        <footer class="footer">
+
+            <div class="footer-left">
+                <p>create by ALden676 ©Alden2024</p>
+            </div>
+
+            <div class="footre-social">
+                <ul class="social-icons">
+                    <li>
+                        <a href="https://www.instagram.com/alden_0522/">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="57" height="57" viewBox="0 0 50 50">
+                                <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
+
+        </footer>
+    </body>
+
+
+</html>
